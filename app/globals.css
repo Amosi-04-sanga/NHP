@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.half-underline {
+  position: relative;
+}
+
+.half-underline::before {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  content: "";
+  background-color: #D21034;
+  width: 40%;
+  height: 4px;
+
+}
