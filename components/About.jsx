@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center">
         <h2 className="half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block">About us</h2>
         </div>
-        <p className="p-4 indent-4 mt-4">The establishment of Networking for Healthcare Promotion (NHP) arises from the need to address significant challenges facing the Tanzanian healthcare sector, including disparities in healthcare access, inadequate health infrastructure, and gaps in health promotion and disease prevention.</p>
+        <p className="py-4 indent-4 mt-4">The establishment of Networking for Healthcare Promotion (NHP) arises from the need to address significant challenges facing the Tanzanian healthcare sector, including disparities in healthcare access, inadequate health infrastructure, and gaps in health promotion and disease prevention.</p>
         
 
         </div>
@@ -23,7 +23,7 @@ const About = () => {
           </div>
 
 
-        <p className="p-4 indent-4 mt-4">To be a leading force in fostering innovative, collaborative healthcare solutions that significantly improve health outcomes and equity in Tanzania.</p>
+        <p className="py-4 indent-4 mt-4">To be a leading force in fostering innovative, collaborative healthcare solutions that significantly improve health outcomes and equity in Tanzania.</p>
         
 
         </div>
@@ -38,7 +38,7 @@ const About = () => {
           </div>
 
 
-        <p className="p-4 indent-4 mt-4">    To build a dynamic network of healthcare professionals and stakeholders to advance health promotion, facilitate knowledge exchange, and implement collaborative projects aimed at addressing key health challenges.</p>
+        <p className="py-4 indent-4 mt-4">To build a dynamic network of healthcare professionals and stakeholders to advance health promotion, facilitate knowledge exchange, and implement collaborative projects aimed at addressing key health challenges.</p>
         
 
         </div>
@@ -54,7 +54,7 @@ const About = () => {
           </div>
 
 
-        <p className="p-4 indent-4 mt-4">Collaboration, Professionalism, Integrity and Accountability.</p>
+        <p className="py-4 indent-4 mt-4">Collaboration, Professionalism, Integrity and Accountability.</p>
         
 
         </div>
