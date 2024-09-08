@@ -3,8 +3,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='px-8'>
-    <div className="mt-12">
+    <div id='about' className='px-8 mt-16 flex flex-wrap md:justify-center gap-12'>
+    <div className="mt-12 max-w-80">
         <div className="text-center">
         <h2 className="half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block">About us</h2>
         </div>
@@ -13,7 +13,7 @@ const About = () => {
 
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 max-w-80">
         
           <div className="flex justify-center gap-4">
             <Image width={35} height={35} alt='vision icon' src="/assets/images/vision.png"/>
@@ -28,7 +28,7 @@ const About = () => {
 
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 max-w-80">
         
           <div className="flex justify-center gap-4">
             <Image width={35} height={35} alt='mission icon' src="/assets/images/mission.png"/>
@@ -44,7 +44,7 @@ const About = () => {
         </div>
 
 
-        <div className="mt-12">
+        <div className="mt-12 max-w-80">
         
           <div className="flex justify-center gap-4">
             <Image width={35} height={35} alt='mission icon' src="/assets/images/values.png"/>

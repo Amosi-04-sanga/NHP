@@ -14,39 +14,43 @@ const News = () => {
     const getitems = async () => {
       const client = createClient({
         // This is the space ID. A space is like a project folder in Contentful terms
-        space: `kdi2o0v2k0w9`,
+        space: `b4d4kmiudhaj`,
         // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-        accessToken: `4cs4zrA7stGMhhnyl9HGW6wRi6GrC6mFYuwuolTcXuA`,
+        accessToken: `DnH6_nM6Rp7Op5IMpYNVOIx5anqs-sNKPgmzRGCTrE0`,
       });
 
       const response = await client.getEntries();
       setData(response.items);
+      console.log(response.items)
     };
     getitems();
   }, []);
 
   return (
-    <div id="news" className="mt-20 px-8">
+    <div id="news" className="mt-16 md:mt-40 px-8">
       <div className="text-center">
       <h2 className='half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block'>Latest news</h2>
 
       </div>
       
 
-      <div className="mt-8 md:flex md:flex-wrap">
+      <div className="mt-8 md:flex md:flex-wrap gap-4 md:gap-6 md:justify-center">
         {data &&
-          data.map((each, index) => (
-            <div key={index} className="m-2 mx-auto py-4 rounded-2xl">
+          data.map((each, index) => {
+            
+            return (
+              <div key={index} className="m-2 max-md:mx-auto max-w-[350px] rounded-2xl">
               <img
                 src={each.fields.featuredImage.fields.file.url}
                 alt="news featured image"
                 className="w-full max-h-[40vh] rounded-t-xl"
               />
-              <div className="flex flex-col text-center shadow-lg shadow-primary-500 pb-4 rounded-b-md">
+              <div className="flex flex-col shadow-lg shadow-primary-500 pb-4 rounded-b-md">
                 <div className="flex flex-col p-2">
-                  <p className="font-bold mt-4">
+                  <h2 className="font-bold text-lg uppercase"> {each.fields.keyword} </h2>
+                  <p className="mt-4">
                     {" "}
-                    {each.fields.tItle}
+                    {each.fields.title.slice(0,80)} {" ... "}
                   </p>
                   
                 </div>
@@ -55,15 +59,18 @@ const News = () => {
                 </button>
               </div>
             </div>
-          ))}
+            )
+          })}
       </div>
 
-      <Link className="text-[#FF0F0F] text-[16px]" href="#">
+<div className="mt-10">
+      <Link className="text-[#FF0F0F] text-[16px] " href="#">
          <div className="flex gap-1 justify-center" >
           <p>View All</p>
           <Image src='/assets/icons/arrow.svg' alt="arrow" width={20} height={20}/>
          </div>
       </Link>
+</div>
     </div>
   );
 };

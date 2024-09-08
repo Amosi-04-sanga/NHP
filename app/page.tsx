@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {About, FAQ, Contacts, Hero, News  } from "../components";
+import {About, FAQ, Contacts, Hero, News, Footer  } from "../components";
 
 
 export default function Home() {
@@ -10,6 +10,8 @@ export default function Home() {
       <News/>
       <FAQ/>
       <Contacts/>
+      <Footer/>
     </main>
   );
 }
+

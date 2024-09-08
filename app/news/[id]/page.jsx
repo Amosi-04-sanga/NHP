@@ -7,6 +7,8 @@ import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+
 
 const page = ({ params }) => {
   const [data, setData] = useState(null);
@@ -17,16 +19,16 @@ const page = ({ params }) => {
     const getitems = async () => {
       const client = createClient({
         // This is the space ID. A space is like a project folder in Contentful terms
-        space: `kdi2o0v2k0w9`,
+        space: `b4d4kmiudhaj`,
         // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-        accessToken: `4cs4zrA7stGMhhnyl9HGW6wRi6GrC6mFYuwuolTcXuA`,
+        accessToken: `DnH6_nM6Rp7Op5IMpYNVOIx5anqs-sNKPgmzRGCTrE0`,
       });
 
       client
         .getEntry(entry_id)
         .then((entry) => {
           setData(entry);
-          // console.log(entry)
+          console.log(entry)
         })
         .catch(console.error);
     };
@@ -84,13 +86,7 @@ const page = ({ params }) => {
 
   return (
     <div className="block w-[95vw]">
-      <button
-        onClick={() => router.back()}
-        className="px-2 py-1 sticky top-0 bg-gradient-to-br text-[12px] from-red-600 to-orange-300 rounded-sm mt-8 ml-4 text-white"
-      >
-        Back
-      </button>
-
+  
       {data ? (
         <div className=" mx-auto p-4">
           <section className="mt-10">
@@ -131,12 +127,22 @@ const page = ({ params }) => {
           </section>
         </div>
       ) : (
-        <h3 className="fixed left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] font-Bold">
-          BME...
-        </h3>
+        <div className='flex justify-center items-center h-[60vh]'>
+        <Image src='/assets/logo.png' alt='logo' width={70} height={40} />
+       </div>
       )}
     </div>
   );
 };
 
 export default page;
+
+
+/*
+<button
+        onClick={() => router.back()}
+        className="px-2 py-1 sticky top-0 bg-gradient-to-br text-[12px] from-red-600 to-orange-300 rounded-sm mt-8 ml-4 text-white"
+      >
+        Back
+      </button>
+*/

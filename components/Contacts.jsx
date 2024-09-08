@@ -24,21 +24,21 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="mt-20 relative px-8">
+    <div id="contacts" className="mt-20 md:mt-40 relative px-8">
       <div className="text-center">
       <h3 className='capitalize half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block'>
         contact us
       </h3>
 
       </div>
-      <p className="mt-8">
+      <p className="mt-8 md:text-center">
         We are available 24/7 , So You may contact us at any time you wish
       </p>
 
-      <div className="grid md:grid-cols-3 gap-4">
-        <div className="mt-14">
+      <div className="flex flex-wrap md:justify-center gap-8 md:gap-10">
+        <div className="mt-14 md:min-w-[320px]">
           <Image
-            className="block opacity-50"
+            className="block opacity"
             src='/assets/images/location.png'
             alt="location adress"
             width={30}
@@ -48,9 +48,9 @@ const Contact = () => {
           <p className="mt-4">Upanga West, Dar es salaam, Tanzania</p>
         </div>
 
-        <div className="mt-14">
+        <div className="mt-14 md:min-w-[320px]">
           <Image
-            className="block opacity-50"
+            className="block"
             src='/assets/images/call.png'
             alt="location adress"
             width={30}
@@ -61,9 +61,9 @@ const Contact = () => {
           <p className="mt-2">+255763396997</p>
         </div>
 
-        <div className="mt-14">
+        <div className="mt-14 md:min-w-[320px]">
           <Image
-            className="block opacity-50"
+            className="block"
             src='/assets/images/email.png'
             alt="location adress"
             width={30}
@@ -74,7 +74,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <p className="mt-10">You can contact us via email adress by filling the contact form below</p>
+      <p className="mt-20 md:text-center">You can contact us via email adress by filling the contact form below</p>
 
       <Zoom>
         <div className="rounded-lg mt-6 bg-[#d21034da] p-4 py-8 mx-auto max-w-[400px]">
@@ -126,4 +126,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

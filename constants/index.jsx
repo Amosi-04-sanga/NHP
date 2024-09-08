@@ -1,3 +1,4 @@
+
 export const Faq = [
     {
       id: "QN one",
@@ -34,4 +35,48 @@ export const Faq = [
     },
   ];
 
+export const FooterLinks = [
+  {
+    icon: '/assets/icons/facebook.svg',
+    path: '#',
+    name: 'facebook',
+  },
+  {
+    icon: '/assets/icons/instagram.svg',
+    path: '#',
+    name: 'instagram',
+  },
+  {
+    icon: '/assets/icons/whatsaap.svg',
+    path: '#',
+    name: 'whatsaap',
+  },
+  {
+    icon: '/assets/icons/linkedin-red.svg',
+    path: '#',
+    name: 'linkedin',
+  },
+]
 
+export const navLinks = [
+  {
+    route: "/",
+    label: "Home",
+  },
+  {
+    route: "#news",
+    label: "News and events",
+  },
+  {
+    route: "/blog",
+    label: "Blog",
+  },
+  {
+    route: '#contacts',
+    label: "Contact us",
+  },
+  {
+    route: "#about",
+    label: "About us",
+  },
+];

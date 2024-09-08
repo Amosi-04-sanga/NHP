@@ -13,8 +13,8 @@ import { Faq } from "../constants";
 const FQA = () => {
   return (
     <Fade>
-      <section className="mt-20 px-8">
-        <h2 className="half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block ">Frequency asked questions</h2>
+      <section className="mt-20 md:mt-40 px-8 mx-auto max-w-[700px]">
+        <h2 className="half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block ">Frequently asked questions</h2>
         <div className="mt-8">
           <Accordion type="single" collapsible className="w-full">
             {Faq.map((item) => (
