@@ -35,7 +35,7 @@ const Contact = () => {
         We are available 24/7 , So You may contact us at any time you wish
       </p>
 
-      <div className="flex flex-wrap md:justify-center gap-8 md:gap-10">
+      <div className="md:flex md:flex-wrap md:justify-center gap-8 md:gap-10">
         <div className="mt-14 md:min-w-[320px]">
           <Image
             className="block opacity"

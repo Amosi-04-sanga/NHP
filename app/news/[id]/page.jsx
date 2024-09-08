@@ -16,7 +16,7 @@ const page = ({ params }) => {
   const entry_id = params.id;
 
   useEffect(() => {
-    const getitems = async () => {
+    const Getitems = async () => {
       const client = createClient({
         // This is the space ID. A space is like a project folder in Contentful terms
         space: `b4d4kmiudhaj`,
@@ -32,7 +32,7 @@ const page = ({ params }) => {
         })
         .catch(console.error);
     };
-    getitems();
+    Getitems();
   }, []);
 
   const options = {
