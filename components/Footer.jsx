@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className='bg-black text-white px-8 py-4 mt-20'>
         
-
-       <div className="flex max-md:flex-col md:justify-center md:gap-8">
+        <div className='flex flex-col md:flex-row-reverse justify-between items-center'>
+        <div className="flex max-md:flex-col md:justify-center md:gap-20">
        <div className="mt-8">
             <h2 className='text-lg uppercase'>Useful links</h2>
             <ul className='mt-4 flex flex-col gap-y-2'>
@@ -41,8 +41,11 @@ const Footer = () => {
        </div>
 
        <div className='flex justify-center'>
-        <Image src='/assets/logo.png' alt='logo' width={200} height={200} />
+        <Image src='/assets/logo.png' alt='logo' width={300} height={300} />
        </div>
+        </div>
+
+       
     <h3 className='text-center mb-4'>All Right Reserved © 2024</h3>
     </div>
   )

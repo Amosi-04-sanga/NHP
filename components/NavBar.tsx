@@ -100,7 +100,7 @@ const NavBar = () => {
 
     </div>
 
-     <div className="flex justify-center items-center bg-orange-100 p-0 ">
+     <div className="flex items-center p-0 ">
          <Slide> 
          <Image alt='logo' src='/assets/logo.png' width={200} height={300} />    
          </Slide>

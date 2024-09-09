@@ -88,7 +88,7 @@ const page = ({ params }) => {
     <div className="block w-[95vw]">
   
       {data ? (
-        <div className=" mx-auto p-4">
+        <div className=" mx-auto p-4 md:px-40">
           <section className="mt-10">
             <h1 style={{fontSize: '30px'}} className="uppercase font-bold text-center">
               {" "}
@@ -117,7 +117,7 @@ const page = ({ params }) => {
             <img
               src={data.fields.featuredImage.fields.file.url}
               alt="featured image"
-              className="w-full max-h-[60vh] mt-10"
+              className="w-full max-h-[70vh] mt-10"
             />
 
             <div className="mt-4">

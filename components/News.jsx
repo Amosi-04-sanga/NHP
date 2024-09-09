@@ -34,12 +34,12 @@ const News = () => {
       </div>
       
 
-      <div className="mt-8 md:flex md:flex-wrap gap-4 md:gap-6 md:justify-center">
+      <div className="mt-8 md:flex md:flex-wrap gap-12 md:gap-10 md:justify-center">
         {data &&
           data.map((each, index) => {
             
             return (
-              <div key={index} className="m-2 max-md:mx-auto max-w-[350px] rounded-2xl">
+              <div key={index} className="m-2 mt-3 max-md:mx-auto max-w-[350px] rounded-2xl">
               <img
                 src={each.fields.featuredImage.fields.file.url}
                 alt="news featured image"
