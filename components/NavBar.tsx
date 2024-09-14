@@ -69,7 +69,7 @@ const NavBar = () => {
         <div
         className={`fixed ${
           !opened ? "-left-[80vw]" : "left-0"
-        } transition-all duration-800 z-10 bg-menu-light dark:bg-menu-dark md:hidden top-[10vh] w-[80vw] sm:w-[65vw] h-[90vh] flex justify-start`}
+        } transition-all duration-800 z-10 bg-menu-light dark:bg-menu-dark md:hidden top-[55px] w-[80vw] sm:w-[65vw] h-[90vh] flex justify-start`}
       >
         <div className="flex flex-col gap-8 bg-[#D21034] p-8 pt-12">
           {navLinks.map((link, index) => {
