@@ -2,26 +2,52 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
+import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const clearForm = () => {
     setName("");
     setEmail("");
-    setPhoneNumber("");
     setMessage("");
   };
 
-  const submitHandler = () => {
+
+  const submitHandler = async (e) => {
+  
     e.preventDefault();
-    console.log("form submited!");
-    clearForm();
+    setLoading(true);
+
+    // emailjs
+    emailjs
+      .send(
+        "service_591517a",
+        "template_323tubp",
+        {
+          from_name: name,
+          to_name: "NHP",
+          from_email: email,
+          to_email: "rickmasha888@gmail.com",
+          message: message,
+        },
+        "skNoOkkBfsoNXwpTh"
+      )
+      .then(() => {
+        setLoading(false);
+        clearForm();
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("something went wrong!");
+      });
   };
+
+
 
   return (
     <div id="contacts" className="mt-20 relative px-8">
@@ -35,7 +61,7 @@ const Contact = () => {
         We are available 24/7 , So You may contact us at any time you wish
       </p>
 
-      <div className="md:flex md:flex-wrap md:justify-center gap-8 md:gap-10">
+      <div className="md:flex md:flex-wrap gap-8 md:gap-10 mx-auto">
         <div className="mt-14 md:min-w-[320px]">
           <Image
             className="block opacity"
