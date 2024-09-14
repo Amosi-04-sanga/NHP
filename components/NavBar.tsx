@@ -40,7 +40,7 @@ const NavBar = () => {
 
   return (
     <>
-    <div className='sticky top-0 left-0 z-10 flex justify-between items-center text-[13px] p-2 h-[10vh] bg-[#D21034]'>
+    <div className='sticky top-0 left-0 z-10 flex justify-between items-center text-[13px] p-2 h-[55px] bg-[#D21034]'>
         <div className='ml-4'>
         <p className="text-white mb-1">
             email 
