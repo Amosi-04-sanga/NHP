@@ -34,7 +34,7 @@ const News = () => {
       </div>
       
 
-      <div className="mt-8 md:flex md:flex-wrap gap-12 md:gap-10 md:justify-center">
+      <div className="mt-8 md:flex md:flex-wrap gap-12 md:gap-10">
         {data &&
           data.map((each, index) => {
             

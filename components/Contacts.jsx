@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contacts" className="mt-20 md:mt-40 relative px-8">
+    <div id="contacts" className="mt-20 relative px-8">
       <div className="text-center">
       <h3 className='capitalize half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block'>
         contact us

@@ -13,7 +13,13 @@ import { Faq } from "../constants";
 const FQA = () => {
   return (
     <Fade>
-      <section className="mt-20 md:mt-40 px-8 mx-auto max-w-[700px]">
+      <div className="lg:flex lg:gap-10 mt-20 mx-auto px-8">
+
+      <div className="min-w-[50vw] max-lg:hidden">
+          <img className='w-full max-h-[500px]' src="/assets/images/faq.jpg" alt="photo" />
+         </div>
+
+      <section className="max-w-[1000px] grow">
         <h2 className="half-underline text-[#0d0d4e] text-[24px] font-[900] inline-block ">Frequently asked questions</h2>
         <div className="mt-8">
           <Accordion type="single" collapsible className="w-full">
@@ -23,7 +29,7 @@ const FQA = () => {
                   {" "}
                   {item.question}{" "}
                 </AccordionTrigger>
-                <AccordionContent className="font-normal indent-2 text-[16px]">
+                <AccordionContent className="font-normal text-[16px]">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -31,6 +37,7 @@ const FQA = () => {
           </Accordion>
         </div>
       </section>
+      </div>
     </Fade>
   );
 };
