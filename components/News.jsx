@@ -43,7 +43,7 @@ const News = () => {
               <img
                 src={each.fields.featuredImage.fields.file.url}
                 alt="news featured image"
-                className="w-full max-h-[40vh] rounded-t-xl"
+                className="w-full max-h-[250px] rounded-t-xl"
               />
               <div className="flex flex-col shadow-lg shadow-primary-500 pb-4 rounded-b-md">
                 <div className="flex flex-col p-2">
